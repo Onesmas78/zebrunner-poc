@@ -1,6 +1,8 @@
 import { test, expect } from "@playwright/test";
+import { zebrunner } from "@zebrunner/javascript-agent-playwright";
 
 test("login", async ({ page }) => {
+  zebrunner.testCaseKey("FPRW-1");
   await page.goto("https://web.v3.fieldproapp.com/login");
   await expect(
     page.getByRole("heading", { name: "Sign in into your account" })

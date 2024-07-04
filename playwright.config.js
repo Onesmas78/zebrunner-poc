@@ -27,6 +27,7 @@ module.exports = defineConfig({
       {
         // Zebrunner reporter configuration
         enabled: true,
+        projectKey: "FPRW",
         // ...
       },
     ],
